@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>XX购物平台</title>
+    <script src="demo.js"></script>
+</head>
+<body>
+    <!-- 侧边导航栏 -->
+    <div id="header" style="border-radius: 10px;margin-top: 20px;">
+        <ul class="daohang">
+        <li><a href="#Mine" class="daohang">我的</a></li>
+        <li><a href="#Visited" class="daohang">我的足迹</a></li> 
+        </ul>
+        <ul class="return">
+            <li><a href="#" class="return">返回顶端</a></li>
+        </ul>
+    </div>
+    <!-- 主体内容 -->
+    <div class="itemshow_container" style="margin-right:0;">
+        <h1 style="margin-left: 200px;color: cornflowerblue;">商品购物平台主页</h1>
+        <div class="itemshow">
+            <p>这是我的商品购物平台主页的测试页面。</p>
+            <p>在这里，你可以浏览各种商品，查看商品详情，并进行购买。</p>
+            <p>希望你喜欢这个页面！</p>
+            <p id="changeable">点击下面的按钮来点赞这个页面。</p>
+            <button onclick="like()">点赞</button>
+            <p id="showInfo">如果你想知道更多关于这个平台的信息，请点击下方按钮。</p>
+            <button onclick="showmore.ShowFunc()">了解更多</button>
+            <p onmouseenter="this.style.display='none'" onmouseout="this.style.display='block'">鼠标指针移上来我就会消失</p>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
