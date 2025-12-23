@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿B站首页</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="main">
+            <a href="#">首页</a>
+            <a href="https://live.bilibili.com" target="_blank"><span>直播</span></a>
+            <a href="https://game.bilibili.com" target="_blank"><span>游戏</span></a>
+            <a href="https://manga.bilibili.com" target="_blank"><span>漫画</span></a>
+            <a href="https://www.bilibili.com/anime" target="_blank"><span>番剧</span></a>
+            <div class="search-box">
+                <input type="text" placeholder="搜索你想要的内容">
+                <div id="search-btn">
+                <svg  hight="18" width="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="" onclick="search()">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3451 15.2003C16.6377 15.4915 16.4752 15.772 16.1934 16.0632C16.15 16.1279 16.0958 16.1818 16.0525 16.2249C15.7707 16.473 15.4456 16.624 15.1854 16.3652L11.6848 12.8815C10.4709 13.8198 8.97529 14.3267 7.44714 14.3267C3.62134 14.3267 0.5 11.2314 0.5 7.41337C0.5 3.60616 3.6105 0.5 7.44714 0.5C11.2729 0.5 14.3943 3.59538 14.3943 7.41337C14.3943 8.98802 13.8524 10.5087 12.8661 11.7383L16.3451 15.2003ZM2.13647 7.4026C2.13647 10.3146 4.52083 12.6766 7.43624 12.6766C10.3517 12.6766 12.736 10.3146 12.736 7.4026C12.736 4.49058 10.3517 2.1286 7.43624 2.1286C4.50999 2.1286 2.13647 4.50136 2.13647 7.4026Z" fill="currentColor"></path>
+                </svg>
+                </div>
+            </div>
+            <a id="login-btn"href="https://space.bilibili.com" target="_blank"><span style="background-color: #0ab3f0;border-radius: 50%;height: 24px;width: 24px;display: flex;justify-content: center;align-items:center;font-size: 10px;">登录</span></a>
+            <a href="https://space.bilibili.com" target="_blank" style="margin-right: 0;padding: 0;">
+            <svg class="download" hight="24" width="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.23181 8.65895V1.75796C7.23181 1.33935 7.57582 1 8.00018 1C8.42453 1 8.76854 1.33935 8.76854 1.75796V8.67097L9.98589 7.47009C10.286 7.17409 10.7725 7.17409 11.0725 7.47009C11.3726 7.7661 11.3726 8.24601 11.0725 8.54201L8.54958 11.0308C8.24952 11.3268 7.76302 11.3268 7.46295 11.0308L4.94002 8.54201C4.63995 8.24601 4.63995 7.7661 4.94002 7.47009C5.24008 7.17409 5.72658 7.17409 6.02665 7.47009L7.23181 8.65895Z" fill="currentColor"></path>
+            <path d="M 3.48023 4.29936 C 2.40686 4.29936 1.53672 5.15772 1.53672 6.21656 V 11.5669 C 1.53672 12.6257 2.40686 13.4841 3.48023 13.4841 H 12.5198 C 13.5931 13.4841 14.4633 12.6257 14.4633 11.5669 V 6.21656 C 14.4633 5.15772 13.5931 4.29936 12.5198 4.29936 H 11.6158 C 11.1915 4.29936 10.8475 3.96001 10.8475 3.5414 C 10.8475 3.12279 11.1915 2.78344 11.6158 2.78344 H 12.5198 C 14.4418 2.78344 16 4.3205 16 6.21656 V 11.5669 C 16 13.4629 14.4418 15 12.5198 15 H 3.48023 C 1.55815 15 0 13.4629 0 11.5669 V 6.21656 C 0 4.3205 1.55815 2.78344 3.48023 2.78344 H 4.38418 C 4.80853 2.78344 5.15254 3.12279 5.15254 3.5414 C 5.15254 3.96001 4.80853 4.29936 4.38418 4.29936 H 3.48023 Z" fill="#fff"></path>
+            </svg>
+            </a>
+        </nav>
+    </header>
+    <!-- 以上为顶部主导航栏内容 -->
+     <div style="background-image: linear-gradient(to top right,#ffffff 0,#0ab3f0 100%);height: 200px;">
+        <h1 style="margin-top: 5px;">这个区块放置顶部的背景图</h1>
+        <p>ps:以下svg图标暂时都统一为下载图标，后续再优化，图片和视频也暂时空置，目前只做页面布局的模仿。</p>
+     </div>
+    <!-- 以上为顶部背景图 -->
+     <nav class="sub">
+        <div style="display: flex;flex-direction: row;">
+            <a href="https://space.bilibili.com" style="margin-right:15px;flex-direction: column;">
+                <svg style="height:18px;width:18px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.23181 8.65895V1.75796C7.23181 1.33935 7.57582 1 8.00018 1C8.42453 1 8.76854 1.33935 8.76854 1.75796V8.67097L9.98589 7.47009C10.286 7.17409 10.7725 7.17409 11.0725 7.47009C11.3726 7.7661 11.3726 8.24601 11.0725 8.54201L8.54958 11.0308C8.24952 11.3268 7.76302 11.3268 7.46295 11.0308L4.94002 8.54201C4.63995 8.24601 4.63995 7.7661 4.94002 7.47009C5.24008 7.17409 5.72658 7.17409 6.02665 7.47009L7.23181 8.65895Z" fill="currentColor"></path>
+                    <path d="M 3.48023 4.29936 C 2.40686 4.29936 1.53672 5.15772 1.53672 6.21656 V 11.5669 C 1.53672 12.6257 2.40686 13.4841 3.48023 13.4841 H 12.5198 C 13.5931 13.4841 14.4633 12.6257 14.4633 11.5669 V 6.21656 C 14.4633 5.15772 13.5931 4.29936 12.5198 4.29936 H 11.6158 C 11.1915 4.29936 10.8475 3.96001 10.8475 3.5414 C 10.8475 3.12279 11.1915 2.78344 11.6158 2.78344 H 12.5198 C 14.4418 2.78344 16 4.3205 16 6.21656 V 11.5669 C 16 13.4629 14.4418 15 12.5198 15 H 3.48023 C 1.55815 15 0 13.4629 0 11.5669 V 6.21656 C 0 4.3205 1.55815 2.78344 3.48023 2.78344 H 4.38418 C 4.80853 2.78344 5.15254 3.12279 5.15254 3.5414 C 5.15254 3.96001 4.80853 4.29936 4.38418 4.29936 H 3.48023 Z" fill="#fff"></path>
+                </svg>
+                <span>动态</span>
+            </a>
+            <a href="https://space.bilibili.com" style="margin-right:15px;display: flex;flex-direction: column;">
+                <svg style="height:18px;width:18px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.23181 8.65895V1.75796C7.23181 1.33935 7.57582 1 8.00018 1C8.42453 1 8.76854 1.33935 8.76854 1.75796V8.67097L9.98589 7.47009C10.286 7.17409 10.7725 7.17409 11.0725 7.47009C11.3726 7.7661 11.3726 8.24601 11.0725 8.54201L8.54958 11.0308C8.24952 11.3268 7.76302 11.3268 7.46295 11.0308L4.94002 8.54201C4.63995 8.24601 4.63995 7.7661 4.94002 7.47009C5.24008 7.17409 5.72658 7.17409 6.02665 7.47009L7.23181 8.65895Z" fill="currentColor"></path>
+                    <path d="M 3.48023 4.29936 C 2.40686 4.29936 1.53672 5.15772 1.53672 6.21656 V 11.5669 C 1.53672 12.6257 2.40686 13.4841 3.48023 13.4841 H 12.5198 C 13.5931 13.4841 14.4633 12.6257 14.4633 11.5669 V 6.21656 C 14.4633 5.15772 13.5931 4.29936 12.5198 4.29936 H 11.6158 C 11.1915 4.29936 10.8475 3.96001 10.8475 3.5414 C 10.8475 3.12279 11.1915 2.78344 11.6158 2.78344 H 12.5198 C 14.4418 2.78344 16 4.3205 16 6.21656 V 11.5669 C 16 13.4629 14.4418 15 12.5198 15 H 3.48023 C 1.55815 15 0 13.4629 0 11.5669 V 6.21656 C 0 4.3205 1.55815 2.78344 3.48023 2.78344 H 4.38418 C 4.80853 2.78344 5.15254 3.12279 5.15254 3.5414 C 5.15254 3.96001 4.80853 4.29936 4.38418 4.29936 H 3.48023 Z" fill="#fff"></path>
+                </svg>
+                <span>热门</span>
+            </a>
+        </div>
+        <div class="nav2" style="border-right: #ffffff solid 1px;padding-right:20px;display: flex;flex-direction: column;">
+            <a href="https://space.bilibili.com">番剧</a>
+            <a href="https://space.bilibili.com">国创</a>
+            <a href="https://space.bilibili.com">综艺</a>
+            <a href="https://space.bilibili.com">鬼畜</a>
+            <a href="https://space.bilibili.com">舞蹈</a>
+            <a href="https://space.bilibili.com">娱乐</a>
+            <a href="https://space.bilibili.com">电影</a>
+            <a href="https://space.bilibili.com">游戏</a>
+            <a href="https://space.bilibili.com">音乐</a>
+            <a href="https://space.bilibili.com">知识</a>
+            <a href="https://space.bilibili.com">资讯</a>
+            <a href="https://space.bilibili.com">美食</a>
+            <a href="https://space.bilibili.com">番剧</a>
+            <a href="https://space.bilibili.com">国创</a>
+            <a href="https://space.bilibili.com">综艺</a>
+            <a href="https://space.bilibili.com">鬼畜</a>
+            <a href="https://space.bilibili.com">舞蹈</a>
+            <a href="https://space.bilibili.com">娱乐</a>
+            <a href="https://space.bilibili.com">电影</a>
+            <a href="https://space.bilibili.com">游戏</a>
+            <a href="https://space.bilibili.com">音乐</a>
+            <a href="https://space.bilibili.com">知识</a>
+            <a href="https://space.bilibili.com">资讯</a>
+            <a href="https://space.bilibili.com">美食</a>
+        </div>
+     </nav>
+    <!-- 以上为次级导航栏内容 -->
+     <div class="container">
+        <div class="card" style="width:580px;height:481px;grid-column: 1 / 3;grid-row: 1 / 3;">
+            <img src="example.jpg" alt="主要视频" style="width:580px;height:auto;border-radius: 5px;">
+            <span>滚动播放主要视频的略缩图</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+        <div class="card">
+            <img src="example.jpg" alt="视频" style="width:inherit;height:auto;border-radius: 5px;">
+            <span>视频名称及作者</span>
+        </div>
+     </div>
+     <!-- 以上为首页视频内容 -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+nav {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+nav a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin: auto;
+    &:not(#login-btn):hover {
+      background-color: #555;
+    }
+}
+
+nav div.search-box {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  height: 27px;
+  padding: 0 10px;
+}
+
+nav input[type="text"] {
+  width: 150px;
+  height: 15px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  &:focus {
+    background-color:rgba(183, 183, 183,0.4)
+  }
+}
+
+nav.sub {
+  background-color: #ea51ba;
+  height: 80px;
+  border-radius: 0;
+  justify-content: flex-start;
+}
+
+nav.sub div.nav2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  height: 80px;
+  width: auto;
+}
+nav.sub div.nav2 a {
+  background-color: #1ac3ff;
+  color: black;
+  font-size:100% ;
+  height: 35%;
+  margin: 0 10px;
+  width: 40px;/*可容纳两个中文字的宽度*/
+  &:hover {
+    background-color: #0077b6;
+  }
+}
+
+/* 以上为导航部分的CSS样式 */
+/* 以下为主体部分的CSS样式 */
+
+div.container {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 280px);
+  grid-template-rows: 230.5px;
+  justify-content: center;
+  gap: 20px;
+}
+
+div.container div.card {
+  width: 280px;
+  height: 230.5px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top,#bed1fb 0%,#004ac2 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#search-btn {
+  display: flex;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+  height: 23px;
+  width:  23px;
+  border-radius: 3px;
+  &:hover {
+    background-color: rgba(128, 128, 128,0.4);
+  }
+}
